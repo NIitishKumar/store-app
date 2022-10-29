@@ -17,7 +17,7 @@ function Product() {
     try {
       const data = await axios({
         method: "GET",
-        url: "http://localhost:4000/api/product",
+        url: "https://immencenode.herokuapp.com/api/product",
       });
       console.log(data);
       setData(data.data.data);
@@ -28,7 +28,7 @@ function Product() {
     try {
       const data = await axios({
         method: "GET",
-        url: "http://localhost:4000/api/product/cart",
+        url: "https://immencenode.herokuapp.com/api/product/cart",
       });
       console.log(data);
       setCartItem(data.data.data);
@@ -42,7 +42,7 @@ function Product() {
     try {
         const data = await axios({
           method: "GET",
-          url: "http://localhost:4000/api/product/order",
+          url: "https://immencenode.herokuapp.com/api/product/order",
         });
         console.log(data);
         setOrderItem(data.data.data);
@@ -56,7 +56,7 @@ function Product() {
         let ids = cartItem.map(x => x._id)
         const data = await axios({
           method: "POST",
-          url: "http://localhost:4000/api/product/order",
+          url: "https://immencenode.herokuapp.com/api/product/order",
           data:{items:ids}
         });
         console.log(data);

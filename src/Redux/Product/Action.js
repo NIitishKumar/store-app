@@ -9,7 +9,7 @@ export  const addtoCart = (id) => async (dispatch) =>{
 
     await axios({
         method:"POST",
-        url:"http://localhost:4000/api/product/cart",
+        url:"https://immencenode.herokuapp.com/api/product/cart",
         data:{id}
     })
 }
@@ -17,7 +17,7 @@ export  const addtoCart = (id) => async (dispatch) =>{
 export  const removeFromCart = (id) => async (dispatch) =>{
     await axios({
         method:"PUT",
-        url:"http://localhost:4000/api/product/cart",
+        url:"https://immencenode.herokuapp.com/api/product/cart",
         data:{id}
     })
     dispatch({
