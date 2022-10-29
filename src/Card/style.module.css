@@ -1,0 +1,47 @@
+.card {
+  width: 350px;
+  background-color: #212529;
+  height: 340px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.card p {
+  color: aliceblue;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+
+}
+
+.card img {
+  width: 100px;
+  height: 150px;
+  margin-top: 15px;
+}
+
+.card button {
+  width: 120px;
+  height: 40px;
+  background-color: blue;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.desc{
+    font-size: 0.7rem;
+}
+
+.cart{
+    background-color: burlywood;
+}

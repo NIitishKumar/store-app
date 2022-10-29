@@ -1,0 +1,55 @@
+.container{
+    height: 95%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+
+.leftContainer{
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.rightContainer{
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card{
+    width: 27%;
+    background-color: #c4bfc1;
+    height: 200px;
+    border-radius: 2%;
+    padding: 1% 2%;
+    text-align: left;
+    padding-top: 4%;
+    color: aliceblue;
+    display: flex;
+}
+
+.card p{
+    font-weight: 700;
+}
+
+.cardImage{
+    width: 150px;
+}
+
+.orderBtn{
+    
+  width: 120px;
+  height: 40px;
+  background-color: rgb(57, 134, 57);
+  border: 0;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+
+}
