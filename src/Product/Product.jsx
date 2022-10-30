@@ -113,7 +113,7 @@ function Product() {
       <div className={style.rightContainer}>
         <h1>{!orderOpen ? "Cart Items" : "Your recent Orders"}</h1>
         {!orderOpen
-          ? cartItem.map((x) => {
+          ? cartItem.length ? cartItem?.map((x) => {
               return (
                 <Card
                   price={x.price}
@@ -124,9 +124,9 @@ function Product() {
                   description={x.description}
                 />
               );
-            })
+            }) : <p>No Item in your cart</p>
           : 
-          orderItem.length ? orderItem.map(x => {
+          orderItem.length ? orderItem?.map(x => {
             return (
                 <Card 
                 price={x.price}
