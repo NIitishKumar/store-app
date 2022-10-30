@@ -111,7 +111,7 @@ function Product() {
             "Loading"}
       </div>
       <div className={style.rightContainer}>
-        <h1>Cart Items</h1>
+        <h1>{!orderOpen ? "Cart Items" : "Your recent Orders"}</h1>
         {!orderOpen
           ? cartItem.map((x) => {
               return (
